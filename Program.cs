@@ -11,7 +11,7 @@ namespace PushAndPullChanges
 
             RunCommand($"git -C \"{repoPath}\" pull");
             RunCommand($"git -C \"{repoPath}\" add .");
-            RunCommand($"git -C \"{repoPath}\" commit -m \"{DateTime.Now.ToString("dd-MM-yyyy-ss")}\"");
+            RunCommand($"git -C \"{repoPath}\" commit -m \"{DateTime.Now.ToString("dd-MM-yyyy HH:mm:ss")}\"");
             RunCommand($"git -C \"{repoPath}\" push");
 
         }
